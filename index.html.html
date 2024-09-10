@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Join our Telegram Group</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        .telegram-invite {
+            background-color: #0088cc;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .telegram-invite:hover {
+            background-color: #007bb5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Join Our Telegram Group</h1>
+    <p>Stay updated with the latest news by joining our Telegram group!</p>
+
+    <!-- Telegram Invite Button -->
+    <a id="telegramButton" href="https://example.com" target="_blank" class="telegram-invite">
+        Join Telegram Group
+    </a>
+
+    <script>
+        // Variable to track the number of clicks
+        let clickedOnce = false;
+
+        document.getElementById('telegramButton').addEventListener('click', function(event) {
+            if (!clickedOnce) {
+                // First click goes to the first link
+                this.href = "https://popslowergrocer.com/c9rnrrs3?key=eb308135c2a5bd6156ffcce5051d9f77"; // The first link you want to redirect to
+                clickedOnce = true; // Set the flag to true after the first click
+            } else {
+                // Second click and subsequent clicks go to the Telegram group
+                this.href = "https://t.me/bearss11"; // Replace with your Telegram invite link
+            }
+        });
+    </script>
+
+</body>
+</html>
